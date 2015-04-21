@@ -1,0 +1,35 @@
+{
+    "event": "suiteStart",
+    "suite": "",
+    "tests": 2
+}{
+    "event": "suiteStart",
+    "suite": "iadvdm\\vdm\\VdmArticleTest",
+    "tests": 2
+}{
+    "event": "testStart",
+    "suite": "iadvdm\\vdm\\VdmArticleTest",
+    "test": "iadvdm\\vdm\\VdmArticleTest::test__toString"
+}{
+    "event": "test",
+    "suite": "iadvdm\\vdm\\VdmArticleTest",
+    "test": "iadvdm\\vdm\\VdmArticleTest::test__toString",
+    "status": "pass",
+    "time": 0.0026860237121582,
+    "trace": [],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "iadvdm\\vdm\\VdmArticleTest",
+    "test": "iadvdm\\vdm\\VdmArticleTest::testCast"
+}{
+    "event": "test",
+    "suite": "iadvdm\\vdm\\VdmArticleTest",
+    "test": "iadvdm\\vdm\\VdmArticleTest::testCast",
+    "status": "pass",
+    "time": 0.000701904296875,
+    "trace": [],
+    "message": "",
+    "output": ""
+}

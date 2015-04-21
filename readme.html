@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Iadvize-VDM</title>
+	</head>
+	
+	<body>
+		<pre>
+	Description du test 
+	 
+	Ce test a pour but de mettre en oeuvre une application permettant 2 choses : 
+	 
+	1. Permettre à l’aide d’une ligne de commande, d’aller chercher les 200 derniers enregistrements du site “Vie de 
+	merde”  et de les stocker. (Champs à récupérer : Contenu, Date et heure, et auteur) 1
+	2. Permettre la lecture des enregistrements précedemment récupérés à l’aide d’une API REST au format JSON 
+	(voir la description de l’API attendue ci­dessous) 
+	 
+	Eléments requis 
+	 
+	● Vous devez utiliser un framework PHP de votre choix 
+	● Vous avez le choix dans la méthode ou le procédé de stockage 
+	● Vous devez utiliser GIT pour versionner vos fichiers 
+	● Vous devez utiliser Composer  pour gérer vos dépendances 2
+	● Vous devez tester unitairement votre code 
+	● Vous devez mettre à disposition votre code via Github 
+	● Vous ne devez pas utiliser l’API du site “Vie de Merde” pour récuperer les informations 
+	 
+	Note 
+	 
+	● La description fonctionnelle via BeHat  serait un plus 3
+	● Si vous ne parvenez pas à utiliser l’ensemble des eléments requis, n’hésitez­pas à présenter tout de même 
+	votre test dans sa version la plus aboutie. 
+	● Vous disposez du temps dont vous avez besoin à la bonne réalisation du test 
+	
+	1 Site “Vie de merde” : http://www.viedemerde.fr/ 
+	2 Site “Composer” : https://getcomposer.org/ 
+	3 Site “BeHat” : http://behat.org/ 
+	
+	Description de l’API 
+	 
+	/api/posts 
+	 
+	Sortie souhaitée : 
+	 
+	{ 
+	    "posts": [ 
+	        { 
+	            "id": 1, 
+	            "content": "Aujourd'hui, iAdvize m'a demandé de réaliser un test de développeur PHP.", 
+	            "date": "2014-01-01 00:00:00", 
+	            "author": "Genius" 
+	        } 
+	    ], 
+	    "count": 1 
+	} 
+	 
+	 
+	Paramètres : 
+	● from (optionnel) ­ Date de début 
+	● to (optionnel) ­ Date de fin 
+	● author (optionnel) ­ Auteur 
+	 
+	Utilisation :  
+	● /api/posts 
+	● /api/posts?from=2014­01­01&to=2014­12­31 
+	● /api/posts?author=Genius 
+	 
+	 
+	/api/posts/<id> 
+	 
+	Sortie souhaitée : 
+	 
+	{ 
+	    "post": { 
+	        "id": 1, 
+	        "content": "Aujourd'hui, iAdvize m'a demandé de réaliser un test de développeur PHP.", 
+	        "date": "2014-01-01 00:00:00", 
+	        "author": "Genius" 
+	    } 
+	} 
+		</pre>
+	</body>
+</html>

@@ -9,7 +9,7 @@ $app = Slim\Slim::getInstance(APP_NAME);
  * URL : <app_name>/
  */
 $app->get('/', function () use ($app) {
-	require './readme.html';
+	require './instructions.html';
 });
 
 /**
